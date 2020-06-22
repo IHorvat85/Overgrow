@@ -1,0 +1,11 @@
+<Resources>
+	<ResBase>
+		<ResID>res_fuel</ResID>
+		<Name>res_fuel</Name>
+		<Description>res_fuel</Description>
+		<IconID>icon_fuel</IconID>
+		<Volume>1</Volume>
+		<Mass>1</Mass>
+		<Stackable>true</Stackable>
+	</ResBase>
+</Resources>

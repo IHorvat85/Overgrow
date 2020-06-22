@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{848019A7-84D3-6DC2-E5CE-A68A09FE9A87}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_0_0;UNITY_5_0;UNITY_5;ENABLE_LICENSE_RENAME;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_NEW_HIERARCHY;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_NONPRO;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Graphics\Lighting\Image Effects\BlurEffect.cs" />
+     <Compile Include="Assets\Graphics\Lighting\Image Effects\ImageEffectBase.cs" />
+     <Compile Include="Assets\Graphics\Lighting\Image Effects\ImageEffects.cs" />
+     <Compile Include="Assets\Graphics\Lighting\Image Effects\NoiseEffect.cs" />
+     <Compile Include="Assets\Source\Controls\AxisBind.cs" />
+     <Compile Include="Assets\Source\Controls\IInputBind.cs" />
+     <Compile Include="Assets\Source\Controls\InputManager.cs" />
+     <Compile Include="Assets\Source\Controls\KeyBind.cs" />
+     <Compile Include="Assets\Source\Controls\KeyStorage.cs" />
+     <Compile Include="Assets\Source\Controls\World\WorldCamera.cs" />
+     <Compile Include="Assets\Source\Controls\World\WorldMouse.cs" />
+     <Compile Include="Assets\Source\Controls\Zone\ControlModes\CMCar.cs" />
+     <Compile Include="Assets\Source\Controls\Zone\ControlModes\CMHover.cs" />
+     <Compile Include="Assets\Source\Controls\Zone\ControlModes\CMNull.cs" />
+     <Compile Include="Assets\Source\Controls\Zone\ControlModes\CMTank.cs" />
+     <Compile Include="Assets\Source\Controls\Zone\ControlModes\IControlMode.cs" />
+     <Compile Include="Assets\Source\Controls\Zone\Order.cs" />
+     <Compile Include="Assets\Source\Controls\Zone\ZoneCamera.cs" />
+     <Compile Include="Assets\Source\Controls\Zone\ZoneMouse.cs" />
+     <Compile Include="Assets\Source\Controls\Zone\ZoneSelectable.cs" />
+     <Compile Include="Assets\Source\Creatures\AI\AIActor.cs" />
+     <Compile Include="Assets\Source\Creatures\AI\EmotionalSim\Emotion.cs" />
+     <Compile Include="Assets\Source\Creatures\AI\EmotionalSim\EmotionalEvent.cs" />
+     <Compile Include="Assets\Source\Creatures\AI\EmotionalSim\EmotionalSimulation.cs" />
+     <Compile Include="Assets\Source\Creatures\AI\EmotionalSim\EventResistance.cs" />
+     <Compile Include="Assets\Source\Creatures\AI\NeedHierarchy\Need.cs" />
+     <Compile Include="Assets\Source\Creatures\AI\NeedHierarchy\NeedHierarchy.cs" />
+     <Compile Include="Assets\Source\Creatures\AI\RevCausalMap\Action.cs" />
+     <Compile Include="Assets\Source\Creatures\AI\RevCausalMap\ActionPathTree.cs" />
+     <Compile Include="Assets\Source\Creatures\AI\RevCausalMap\Link.cs" />
+     <Compile Include="Assets\Source\Creatures\AI\RevCausalMap\Map.cs" />
+     <Compile Include="Assets\Source\Creatures\AI\RevCausalMap\State.cs" />
+     <Compile Include="Assets\Source\Interface\ITooltipData.cs" />
+     <Compile Include="Assets\Source\Interface\SelectionBoxController.cs" />
+     <Compile Include="Assets\Source\Interface\TooltipController.cs" />
+     <Compile Include="Assets\Source\Interface\WorldMapUIController.cs" />
+     <Compile Include="Assets\Source\Interface\WorldMapVehiclePanel.cs" />
+     <Compile Include="Assets\Source\Interface\ZoneCursorController.cs" />
+     <Compile Include="Assets\Source\Interface\ZoneMapUIController.cs" />
+     <Compile Include="Assets\Source\Language\LanguageSetter.cs" />
+     <Compile Include="Assets\Source\Language\Table.cs" />
+     <Compile Include="Assets\Source\Resources\Convoy.cs" />
+     <Compile Include="Assets\Source\Resources\Database.cs" />
+     <Compile Include="Assets\Source\Resources\ResBase.cs" />
+     <Compile Include="Assets\Source\Resources\ResConsumable.cs" />
+     <Compile Include="Assets\Source\Resources\ResMountable.cs" />
+     <Compile Include="Assets\Source\Resources\ResourceInfo.cs" />
+     <Compile Include="Assets\Source\Settings\Difficulty.cs" />
+     <Compile Include="Assets\Source\Settings\Gameplay.cs" />
+     <Compile Include="Assets\Source\Test\AIEventTrigger.cs" />
+     <Compile Include="Assets\Source\Test\FramerateMonitor.cs" />
+     <Compile Include="Assets\Source\Test\MapGenerator.cs" />
+     <Compile Include="Assets\Source\Test\TestScript.cs" />
+     <Compile Include="Assets\Source\Test\XMLSerializerHelper.cs" />
+     <Compile Include="Assets\Source\TimeOfDay\TimeManager.cs" />
+     <Compile Include="Assets\Source\Utility\ColorData.cs" />
+     <Compile Include="Assets\Source\Utility\DefinitionLoader.cs" />
+     <Compile Include="Assets\Source\Utility\ErrorLog.cs" />
+     <Compile Include="Assets\Source\Utility\FileManager.cs" />
+     <Compile Include="Assets\Source\Utility\IDeserialized.cs" />
+     <Compile Include="Assets\Source\Utility\LineRendererCustom.cs" />
+     <Compile Include="Assets\Source\Utility\LoadScreenManager.cs" />
+     <Compile Include="Assets\Source\Utility\Meshes.cs" />
+     <Compile Include="Assets\Source\Utility\Pathfinding.cs" />
+     <Compile Include="Assets\Source\Utility\Startup.cs" />
+     <Compile Include="Assets\Source\Utility\TSList.cs" />
+     <Compile Include="Assets\Source\Utility\TSQueue.cs" />
+     <Compile Include="Assets\Source\Utility\Textures.cs" />
+     <Compile Include="Assets\Source\Utility\TimeController.cs" />
+     <Compile Include="Assets\Source\Utility\TransformFunctions.cs" />
+     <Compile Include="Assets\Source\Utility\Vec2Int.cs" />
+     <Compile Include="Assets\Source\Vehicles\Slot.cs" />
+     <Compile Include="Assets\Source\Vehicles\SlotInfo.cs" />
+     <Compile Include="Assets\Source\Vehicles\Vehicle.cs" />
+     <Compile Include="Assets\Source\Vehicles\VehicleController.cs" />
+     <Compile Include="Assets\Source\Vehicles\VehicleHull.cs" />
+     <Compile Include="Assets\Source\World\ProcGen\Noise.cs" />
+     <Compile Include="Assets\Source\World\ProcGen\ZoneTileShapeGenerator.cs" />
+     <Compile Include="Assets\Source\World\Weather\SunController.cs" />
+     <Compile Include="Assets\Source\World\WorldMapController.cs" />
+     <Compile Include="Assets\Source\World\WorldMapGenerator.cs" />
+     <Compile Include="Assets\Source\World\WorldMapTile.cs" />
+     <Compile Include="Assets\Source\World\WorldMapTileController.cs" />
+     <Compile Include="Assets\Source\World\Zone.cs" />
+     <Compile Include="Assets\Source\World\ZoneMapController.cs" />
+     <Compile Include="Assets\Source\World\ZoneMapGenerator.cs" />
+     <None Include="Assets\Graphics\Shaders\3DTextLight.shader" />
+     <None Include="Assets\Graphics\Lighting\Shaders\Light.shader" />
+     <None Include="Assets\Graphics\Lighting\Image Effects\BlurEffectConeTaps.shader" />
+     <None Include="Assets\Graphics\Lighting\Shaders\RenderOverlay.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="NoiseLib">
+ <HintPath>F:/Overgrow/Overgrow/Assets/Source/World/ProcGen/NoiseLib.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
